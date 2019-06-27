@@ -10,10 +10,7 @@ import pieo_datatypes::*;
  * It is assumed that '1 for rank and send_time values equals Infinity
 */
 
-module pieo #
-(
-    parameter SIZE = (2**16)
-)
+module pieo
 (
     input clk,
     input rst,
@@ -50,7 +47,7 @@ module pieo #
     output logic deq_valid_out,
     output SublistElement deq_element_out,
 
-    /* element moved */
+    /* element moved during a primitive operation */
     output logic [ID_LOG:0] flow_id_moved_out,
     output logic [$clog2(NUM_OF_SUBLIST):0] flow_id_moved_to_sublist_out
 );
