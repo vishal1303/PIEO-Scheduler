@@ -71,14 +71,14 @@ module pieo
     } neigh_types;
 
     //ordered list in SRAM
-	logic enable_A [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
-	logic write_A [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
+    logic enable_A [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
+    logic write_A [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
     logic [$clog2(NUM_OF_SUBLIST)-1:0] address_A [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
     SublistElement wr_data_A [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
     SublistElement rd_data_A [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
 
-	logic enable_B [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
-	logic write_B [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
+    logic enable_B [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
+    logic write_B [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
     logic [$clog2(NUM_OF_SUBLIST)-1:0] address_B [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
     SublistElement wr_data_B [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
     SublistElement rd_data_B [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
