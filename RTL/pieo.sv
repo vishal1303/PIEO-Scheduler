@@ -105,14 +105,14 @@ module pieo
     end
     endgenerate
 
-	logic enable_AA [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
-	logic write_AA [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
+    logic enable_AA [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
+    logic write_AA [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
     logic [$clog2(NUM_OF_SUBLIST)-1:0] address_AA [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
     logic [TIME_LOG-1:0] wr_data_AA [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
     logic [TIME_LOG-1:0] rd_data_AA [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
 
-	logic enable_BB [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
-	logic write_BB [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
+    logic enable_BB [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
+    logic write_BB [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
     logic [$clog2(NUM_OF_SUBLIST)-1:0] address_BB [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
     logic [TIME_LOG-1:0] wr_data_BB [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
     logic [TIME_LOG-1:0] rd_data_BB [NUM_OF_ELEMENTS_PER_SUBLIST-1:0];
